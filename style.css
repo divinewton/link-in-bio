@@ -1,0 +1,198 @@
+/* imported fonts from google */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+}
+body {
+    --text: #eaf4ed;
+    --background: #090a11;
+    --primary: #aad2b5;
+    --secondary: #375568;
+    --accent: #757fb6;
+    --other: #8294B6;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    background-color: var(--background);
+    color: var(--text);
+    word-wrap: break-word;
+    margin-left: 0;
+    margin-right: 0;
+}
+img {
+    background: none;
+}
+
+#blob-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -100;
+}
+.blob {
+    height: 30vmax;
+	aspect-ratio: 1;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	border-radius: 50%;
+	filter: blur(100px);
+    z-index: -99;
+    opacity: 60%;
+}
+#blob-left {
+    transform: translate(-100%, -110%);
+	background: var(--accent);
+}
+#blob-right {
+    transform: translate(10%, 80%);
+	background: var(--accent);
+}
+#blob-top {
+    transform: translate(50%, -180%);
+	background: var(--accent);
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#title h1 {
+    font-family: "Rubic", sans-serif;
+    color: var(--accent);
+    -webkit-text-fill-color: var(--background);
+    -webkit-text-stroke: 2.5px var(--accent);
+    margin: 0;
+    text-align: center;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#location-text {
+    color: var(--other);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+#location-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    color: var(--primary)
+}
+#location-container img {
+    width: 25px;
+    height: 25px;   
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+}
+#image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#pfp {
+    width: 319px;
+    height: 300px;
+    opacity: 90%;
+}
+#socials-bar {
+	display: flex;
+    width: 230px;
+    height: 50px;
+    flex-shrink: 0;
+}
+.bottom-socials-item {
+    display: flex;
+	border-radius: 50%;
+	position: static;
+	margin-block: auto;
+	margin-inline: auto;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+    -webkit-backdrop-filter: blur(10px);
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    fill: rgba(55, 71, 83, 0.4);
+    box-shadow: 1px 1px 10px 1px rgba(157, 189, 181, 0.4) inset;
+    filter: drop-shadow(0px 0px 50px #090A11);
+    backdrop-filter: blur(10px);
+}
+.bottom-socials-item img {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+}
+#bottom-link {
+    display: flex;
+    align-items: center;
+    width: 254px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: rgba(55, 71, 83, 0.25);
+    box-shadow: 0px 0px 25px 1px rgba(9, 10, 17, 0.50), 1px 1px 10px 1px rgba(157, 189, 181, 0.20) inset;
+    backdrop-filter: blur(10px);
+}
+#elipse {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    fill: rgba(55, 71, 83, 0.25);
+    box-shadow: 1px 1px 10px 1px rgba(157, 189, 181, 0.20) inset;
+    filter: drop-shadow(5px 5px 50px #090A11);
+    backdrop-filter: blur(10px);
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bottom-link a {
+    color: var(--other);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    margin-left: 22px;
+}
