@@ -70,6 +70,29 @@ img {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+@media only screen and (min-width: 500px) {
+    #main-content {
+        border: 5px solid var(--accent);
+        border-radius: 50px;
+        width: 424px;
+        margin: 100px auto;
+    }
+}
+@media only screen and (min-height: 1000px) {
+    #main-content {
+        margin: 125px auto;
+    }
+}
+@media only screen and (min-height: 1100px) {
+    #main-content {
+        margin: 165px auto;
+    }
+}
+@media only screen and (min-height: 1200px) {
+    #main-content {
+        margin: 225px auto;
+    }
+}
 
 #title {
     display: flex;
@@ -166,6 +189,7 @@ img {
     box-shadow: 1px 1px 10px 1px rgba(157, 189, 181, 0.20) inset;
     box-shadow: 0px 0px 25px 1px rgba(9, 10, 17, 0.50);
     backdrop-filter: blur(10px);
+    cursor: pointer;
 }
 #elipse {
     width: 50px;
