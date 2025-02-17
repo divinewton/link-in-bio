@@ -116,7 +116,7 @@ img {
     color: var(--other);
     text-align: center;
     font-family: "Work Sans";
-    font-size: 26px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -129,8 +129,8 @@ img {
     color: var(--primary)
 }
 #location-container img {
-    width: 25px;
-    height: 25px;   
+    width: 20px;
+    height: 20px;   
     flex-shrink: 0;
     aspect-ratio: 1/1;
 }
